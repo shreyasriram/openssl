@@ -556,7 +556,7 @@ int rehash_main(int argc, char **argv)
 
     if (evpmdsize <= 0 || evpmdsize > EVP_MAX_MD_SIZE)
         goto end;
-
+//test
     if (*argv != NULL) {
         while (*argv != NULL)
             errs += do_dir(*argv++, h);
@@ -568,7 +568,7 @@ int rehash_main(int argc, char **argv)
             errs = 1;
             goto end;
         }
-        for (e = strtok(m, lsc); e != NULL; e = strtok(NULL, lsc))
+        for (e = strtok_r(m, lsc, &e); e != NULL; e = strtok_r(NULL, lsc, &e))
             errs += do_dir(e, h);
         OPENSSL_free(m);
     } else {
