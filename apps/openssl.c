@@ -208,7 +208,7 @@ static void setup_trace(const char *str)
     val = OPENSSL_strdup(str);
 
     if (val != NULL) {
-        char *valp = val;
+        char *valp = val;//also here
         char *item;
 		//test
         for (valp = val; (item = strtok(valp, ",")) != NULL; valp = NULL) {
