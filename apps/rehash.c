@@ -556,7 +556,7 @@ int rehash_main(int argc, char **argv)
 
     if (evpmdsize <= 0 || evpmdsize > EVP_MAX_MD_SIZE)
         goto end;
-
+//test
     if (*argv != NULL) {
         while (*argv != NULL)
             errs += do_dir(*argv++, h);
