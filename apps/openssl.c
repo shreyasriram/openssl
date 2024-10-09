@@ -209,8 +209,8 @@ static void setup_trace(const char *str)
 
     if (val != NULL) {
         char *valp = val;
-        char *item;
-
+        char *item; //dhs
+	
         for (valp = val; (item = strtok(valp, ",")) != NULL; valp = NULL) {
             int category = OSSL_trace_get_category_num(item);
 
