@@ -859,7 +859,7 @@ static int afalg_chk_platform(void)
                  AFALG_R_FAILED_TO_GET_PLATFORM_INFO);
         return 0;
     }
-
+	//another one
     str = strtok(ut.release, ".");
     for (i = 0; i < 3 && str != NULL; i++) {
         kver[i] = atoi(str);
