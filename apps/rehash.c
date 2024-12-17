@@ -567,10 +567,10 @@ int rehash_main(int argc, char **argv)
             BIO_puts(bio_err, "out of memory\n");
             errs = 1;
             goto end;
-        }//test 111 again
+        }//test 111 again 
         for (e = strtok_r(m, lsc, &m); e != NULL; e = strtok_r(NULL, lsc, &m))
             errs += do_dir(e, h);
-        OPENSSL_free(m);//Another
+        OPENSSL_free(m);//Another one
     } else {
         errs += do_dir(X509_get_default_cert_dir(), h);
     }
