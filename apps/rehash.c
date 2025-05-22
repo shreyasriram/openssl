@@ -567,7 +567,11 @@ int rehash_main(int argc, char **argv)
             BIO_puts(bio_err, "out of memory\n");
             errs = 1;
             goto end;
+<<<<<<< Updated upstream
         }//test 111 
+=======
+        }//test
+>>>>>>> Stashed changes
         for (e = strtok_r(m, lsc, &m); e != NULL; e = strtok_r(NULL, lsc, &m))
             errs += do_dir(e, h);
         OPENSSL_free(m);//Another
