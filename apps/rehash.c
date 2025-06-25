@@ -578,7 +578,7 @@ int rehash_main(int argc, char **argv)
  end:
     return errs;
 }
-
+//Hi
 #else
 const OPTIONS rehash_options[] = {
     {NULL}
